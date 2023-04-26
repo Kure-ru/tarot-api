@@ -184,3 +184,6 @@ app.get("/api/:id", (req, res) => {
 app.listen(process.env.PORT || PORT, () => {
   console.log(`Server running on ${PORT}`);
 });
+
+// Export the Express API
+module.exports = app;
