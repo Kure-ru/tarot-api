@@ -1,6 +1,10 @@
 const express = require("express");
 const app = express();
 const PORT = 8000;
+const cors = require('cors') //Allows code to run on server AND localstorage.
+
+
+app.use(cors())
 
 const cards = {
   "01": {
